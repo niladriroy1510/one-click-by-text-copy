@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    
+    
+    
+    
+    
+<input type="readonly" name="share_link2" id="share_link2" value="Hello, How are you?">
+
+<button id="clickcopy" onclick="copy()">Click to Copy</button>
+		
+		
+		
+	
+		
+		
+
+		
+<script type="text/javascript">
+
+		function copy(){
+			try{
+				$('#share_link2').select();
+				document.execCommand('copy');
+					//alert('done');
+				$("#clickcopy").html("Copied");
+			}
+			catch(e){
+				alert(e);
+			}
+		}
+
+</script>
+    
+    
+    
+    
+    
+    
+</body>
+</html>
